@@ -1,0 +1,176 @@
+html,body
+{
+	margin: 0;
+	padding: 0;
+}
+h3
+{
+
+}
+p
+{
+
+}
+#anchor
+{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 10px;
+	right: 10px;
+	background: rgb(105,195,156);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+#anchor a
+{
+	display: block;
+}
+.jumbotron
+{
+	width: 100%;
+	background-color: #000;
+}
+.jumbotron .logo
+{
+	position: relative;
+	top: 15px;
+	left: 10%;
+}
+.jumbotron h2
+{
+margin-top: 300px;
+text-align: center;
+color: rgb(255,255,255);
+}
+#nav-menu
+{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 10px;
+}
+#nav-menu .menu
+{
+	padding-left: 0;
+	margin: 0;
+
+}
+#nav-menu .menu .menu__item
+{
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	border-bottom: 2px solid rgb(105,195,156);
+	margin: 0 10px;
+	}
+#nav-menu .menu .menu__item a
+{
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+	font-size: 18px;
+}
+
+#about
+{
+
+}
+#about h3
+{
+
+}
+#about p
+{
+
+}
+#what
+{
+
+}
+#what .description
+{
+
+}
+#what .description p
+{
+
+}
+#what .ideology
+{
+
+}
+#what .ideology h3
+{
+
+}
+#what .ideology p
+{
+
+}
+#team
+{
+
+}
+#team h3
+{
+
+}
+#team p
+{
+
+}
+#team #people
+{
+
+}
+#team #people .person
+{
+
+}
+#team #people .person .photo
+{
+
+}
+#team #people .person .name
+{
+
+}
+#team #people .person .position
+{
+
+}
+#work
+{
+
+}
+#work h3
+{
+
+}
+#work p
+{
+
+}
+#work #carousel
+{
+
+}
+#contacts
+{
+
+}
+#contacts .call
+{
+
+}
+#contacts .menu
+{
+
+}
+#contacts .social
+{
+	
+}
