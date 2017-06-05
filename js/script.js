@@ -22,3 +22,22 @@ function Menu(options)
 		body.stop().animate({scrollTop:distance}, 500, 'swing');
 	}
 }
+
+function View(options)
+{
+		var root =  options.element;
+	$(root).children().hover( function(event)
+	{
+		// event.preventDefault();
+		// console.log(root.getAttribute('id')+'>div');
+		$(root).children().removeClass('view__active');
+		if(event.target.closest('#'+root.getAttribute('id')+'>div'))
+		{
+			if(event.target.closest('#'+root.getAttribute('id')+'>div'))
+			{
+				// console.log('ready to toggle')
+				$(event.target.closest('#'+root.getAttribute('id')+'>div')).toggleClass('view__active');  
+			}
+		}
+	});
+}

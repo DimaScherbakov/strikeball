@@ -38,7 +38,7 @@
 	<h3>TEAM</h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, assumenda?</p>
 	<div id="people">
-		<div class="person person__active">
+		<div class="person view__active">
 			<img src="img/" alt="" class="photo">
 			<div class="name">name1</div>
 			<div class="position">position1</div>
@@ -60,8 +60,8 @@
 	<h3>Lorem ipsum</h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, accusantium.</p>
 </div>
-	<div class="carousel">
-	<div class="carousel__block carousel__block__active">1</div>
+	<div id="carousel">
+	<div class="carousel__block view__active">1</div>
 	<div class="carousel__block">2</div>
 	<div class="carousel__block">3</div>
 	<div class="carousel__block">4</div>
@@ -77,7 +77,9 @@
 <script type="text/javascript">
 	// console.log(document.querySelectorAll('#nav-menu'));
 	var menu = new Menu({element : document.getElementById('nav-menu')});
+	var viewPeople = new View({element : document.getElementById('people')});
+	var viewProjects = new View({element : document.getElementById('carousel')})
 </script>
 </body>
 </html>
-<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
