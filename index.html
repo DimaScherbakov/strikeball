@@ -72,8 +72,12 @@
 <div class="menu"></div>
 <div class="social"></div>
 </div>
-<script type="text/javascript" href="js/script.js"></script>
-<script type="text/javascript" href="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+	// console.log(document.querySelectorAll('#nav-menu'));
+	var menu = new Menu({element : document.getElementById('nav-menu')});
+</script>
 </body>
 </html>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
