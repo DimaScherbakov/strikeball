@@ -3,13 +3,21 @@ html,body
 	margin: 0;
 	padding: 0;
 }
-h3
+body
 {
 
 }
+h3
+{
+	font-size: 12px;
+}
 p
 {
-
+	font-size: 21px;	
+}
+.clearfix
+{
+	clear: both;
 }
 #anchor
 {
@@ -76,43 +84,66 @@ color: rgb(255,255,255);
 
 #about
 {
-
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
 }
 #about h3
 {
-
+	text-align: center;
 }
 #about p
 {
-
+	text-align: center;
 }
 #what
 {
+outline: 1px solid red;
 
 }
 #what .description
 {
-
+	width: 40%;
+	float: left;
+	outline: 1px solid black;
 }
 #what .description p
 {
-
+	width: 40%;
+	min-height: 200px;
+	/*text-align: right;*/
+	outline: 1px solid green;
+	float: right;
+	margin-top: 250px;
+	font-size: 25px;
 }
 #what .ideology
 {
-
+	margin-left: 40%;
+	width: 60%;
+	/*float: right;*/
+	position: relative;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+#what .ideology *
+{
+	/*margin-left: 20px;*/
 }
 #what .ideology h3
 {
-
 }
 #what .ideology p
 {
-
+	font-size: 30px;
 }
 #team
 {
-
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	/*padding-left: 50px;*/
 }
 #team h3
 {
@@ -120,7 +151,7 @@ color: rgb(255,255,255);
 }
 #team p
 {
-
+	font-size: 30px;
 }
 #team #people
 {
@@ -128,35 +159,71 @@ color: rgb(255,255,255);
 }
 #team #people .person
 {
-
+display: inline-block;
+}
+#team #people .person:not(:first-child)
+{
+	margin-left: 15%;
+}
+#team #people .person__active
+{
+	background-color: rgba(105,195,156,0.5);
+	color: white;
 }
 #team #people .person .photo
 {
-
+	float: left;
+	width: 100px;
+	height: 125px;
+	outline: 1px solid black;
 }
 #team #people .person .name
 {
-
+	margin-left: 110px;
 }
 #team #people .person .position
 {
-
+	margin-left: 110px;
 }
 #work
 {
-
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
 }
 #work h3
 {
-
+text-align: center;
 }
 #work p
 {
-
+text-align: center;
 }
-#work #carousel
+.carousel
 {
-
+width: 70%;
+height: 125px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.carousel__block
+{
+	display: inline-block;
+	outline: 1px solid black;
+	/*min-width: 100px; */
+	width: 20%;
+	height: 100%;
+}
+.carousel__block:not(:first-child)
+{
+	margin-left: 5%;
+}
+.carousel__block__active
+{
+	background-color: rgba(105,195,156,0.5);
+	color: white;
 }
 #contacts
 {
@@ -173,4 +240,13 @@ color: rgb(255,255,255);
 #contacts .social
 {
 	
+}
+
+#contacts
+{
+
+}
+#contacts
+{
+
 }
