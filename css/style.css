@@ -256,17 +256,21 @@ text-align: center;
 {
 text-align: center;
 }
-.carousel
+#carousel
 {
 width: 70%;
 height: 125px;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
+position: relative;
+overflow: hidden;
 }
 .carousel__block
 {
 	display: inline-block;
+	position: relative;
+	/*left: -350px;*/
 	outline: 1px solid black;
 	/*min-width: 100px; */
 	width: 20%;
@@ -281,18 +285,79 @@ text-align: center;
 	background-color: rgba(105,195,156,0.5);
 	color: white;
 }
+
+.carousel__arrow
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 50%;
+	margin-left: 0%;
+	margin-top:-25px;
+	/*background: rgb(105,195,156);*/
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	z-index: 101;
+}
+
+.carousel__leftArrow
+{
+	left: 0;
+}
+.carousel__rightArrow
+{
+	right: 0;
+}
 #contacts
 {
-
+margin-top: 50px;
+background-color: grey;
 }
 #contacts .call
 {
-
+	width: 70%;
+margin-left: auto;
+margin-right: auto;
+}
+#contacts .call p
+{
+	/*width:40%;*/
+	/*margin: 0;*/
+	display: inline-block;
+}
+.phone-number
+{
+	color:  rgb(105,195,156);
 }
 #contacts .menu
 {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#contacts .menu
+{
+	padding-left: 0;
+	margin: 0;
 
 }
+#contacts .menu .menu__item
+{
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	/*border-bottom: 2px solid rgb(105,195,156);*/
+	margin: 0 10px 0 0;
+	}
+#contacts .menu .menu__item a
+{
+	text-decoration: none;
+	cursor: pointer;
+	color: #000;
+	font-size: 18px;
+}
+
 #contacts .social
 {
 	

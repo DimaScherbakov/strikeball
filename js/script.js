@@ -26,6 +26,25 @@ function Menu(options)
 function View(options)
 {
 		var root =  options.element;
+		var arrows = options.arrows;
+
+	function createArrows()
+	{
+		var left = $('<div>').addClass('carousel__leftArrow carousel__block carousel__arrow ');
+		$(root).prepend(left);
+		console.table(root);	
+		var right = $('<div>').addClass('carousel__block carousel__arrow carousel__rightArrow');
+		$(root).prepend(right);
+	};
+	function arrowShiftsFocus(){};
+	
+//---------------------Use---------------------
+
+	if (arrows == true)
+		{
+			console.info('arrows are true! so lets create them');
+			createArrows();
+		};
 	$(root).children().hover( function(event)
 	{
 		// event.preventDefault();
